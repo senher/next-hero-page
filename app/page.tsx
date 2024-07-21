@@ -47,9 +47,9 @@ export default function Home() {
               {companyList.map((company) => {
                 return (
                   <Image
-                    className="object-contain"
-                    key={company}
+                    className="h-6 sm:h-10 w-auto"
                     src={"/" + company + ".png"}
+                    key={company}
                     alt={company}
                     width={120}
                     height={40}

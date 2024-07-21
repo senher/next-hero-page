@@ -3,14 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer base {
-  img,
-  video {
-    width: auto;
-    height: auto;
-  }
+img, video {
+  max-width: 100%;
+  height: auto;
 }
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
