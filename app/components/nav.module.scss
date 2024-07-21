@@ -1,0 +1,33 @@
+
+.modal {
+  visibility: hidden;
+  transform: translateX(-100%);
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+}
+
+.modalOpen {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav li {
+  margin: 15px 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}

@@ -1,0 +1,41 @@
+.home {
+  .section-title {
+    @apply text-3xl xl:text-5xl;
+  }
+
+  .join {
+    .title {
+      @apply text-transparent text-6xl xl:text-8xl 2xl:text-9xl bg-clip-text bg-gradient-to-r;
+    }
+    .text {
+      @apply text-slate-300 text-sm xl:text-xl 2xl:text-2xl uppercase pt-4 xl:pt-6;
+    }
+  }
+  .adoption {
+    .title {
+      @apply relative text-3xl relative w-3 pl-6 before:contents whitespace-nowrap;
+      .bar {
+        @apply absolute inline-block left-0 top--1  w-0.5 h-full;
+      }
+    }
+
+    .dot {
+      @apply relative w-3 before:contents pl-3;
+      &:before {
+        @apply absolute left-0 top-1 inline-block w-[5px] h-[5px] rounded-full bg-cyan-500;
+      }
+    }
+    .content {
+      @apply text-xl text-gray-400;
+    }
+    .number {
+      @apply text-2xl;
+    }
+    .text {
+      @apply text-xl text-gray-400;
+    }
+    .right > div {
+      @apply flex flex-col gap-4;
+    }
+  }
+}
