@@ -19,7 +19,7 @@ const MenuModal = ({ menuList }: { menuList: Menu[] }) => {
   };
   useEffect(() => {}, []);
   return (
-    <div>
+    <div className="text-white">
       <div className="xl:hidden text-3xl" onClick={toggleMenu}>
         <IoMenu />
       </div>
