@@ -50,7 +50,7 @@ export default function Nav() {
       </div>
       <nav className="h-16 bg-black/80 flex items-center justify-center px-4">
         <div className="max-w-5xl w-full flex items-center">
-          <Image src="/logo.png" className="w-32 sm:w-48" alt="Solana" width={182} height={27} />
+          <Link href={'/'}><Image src="/logo.png" className="w-32 sm:w-48" alt="Solana" width={182} height={27} /></Link>
           <div className="menu-list hidden xl:flex items-center ml-auto gap-x-8">
             {menuList.map((menu) => {
               return (
