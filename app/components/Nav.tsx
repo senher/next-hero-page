@@ -66,7 +66,7 @@ export default function Nav() {
             })}
           </div>
         </div>
-        <MenuModal />
+        <MenuModal menuList={menuList} />
       </nav>
     </header>
   );

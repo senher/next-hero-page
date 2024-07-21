@@ -1,7 +1,5 @@
 @import "normalize.css";
 @import "./index.module.scss";
-@import "./seamless.module.scss";
-@import "./components/nav.module.scss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

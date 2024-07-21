@@ -2,8 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { IoMenu, IoCloseSharp } from "react-icons/io5";
+import Link from "next/link";
 
-const MenuModal = () => {
+interface Menu {
+  name: string;
+}
+const MenuModal = ({ menuList }: { menuList: Menu[] }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,37 +17,29 @@ const MenuModal = () => {
       setIsOpen(true);
     }
   };
-  useEffect(()=>{
-    
-
-  },[])
+  useEffect(() => {}, []);
   return (
     <div>
       <div className="xl:hidden text-3xl" onClick={toggleMenu}>
         <IoMenu />
       </div>
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-black/85 flex flex-col items-center justify-center modal ${
-          isOpen ? "modalOpen" : ""
+        className={`fixed top-0 left-0 w-full h-full bg-black/85 flex flex-col items-center justify-center transition-all duration-300 ease-in-out -translate-x-full  ${
+          isOpen ? "visible opacity-1 translate-x-0" : "invisible"
         }`}
       >
         <div className="xl:hidden text-3xl absolute top-8 right-4" onClick={toggleMenu}>
           <IoCloseSharp />
         </div>
-        <ul className="text-2xl">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
+        <div className="menu-list flex flex-col gap-4">
+          {menuList.map((menu) => {
+            return (
+              <Link className="text-xl" href={menu.name} key={menu.name}>
+                {menu.name}
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
