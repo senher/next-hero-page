@@ -12,12 +12,6 @@ export default function Home() {
     "lollapalooza",
     "magic eden",
   ];
-  const items = ["Item 1", "Item 2", "Item 3", "Item 4"];
-  const listItems = Array.from({ length: 100 }, (_, i) => (
-    <div key={i} style={{ height: "50px", padding: "10px", borderBottom: "1px solid #ccc" }}>
-      Item {i + 1}
-    </div>
-  ));
   return (
     <main className="home">
       <section className="banner flex pt-[40vw] pb-[30vw] sm:py-[12vw] items-center justify-center text-center text-white bg-[url('/banner.jpg')] bg-no-repeat bg-contain">
@@ -53,12 +47,13 @@ export default function Home() {
               {companyList.map((company) => {
                 return (
                   <Image
-                    className="h-6 sm:h-10 w-auto"
+                    className="object-contain"
                     key={company}
                     src={"/" + company + ".png"}
                     alt={company}
                     width={120}
                     height={40}
+                    priority
                   />
                 );
               })}
