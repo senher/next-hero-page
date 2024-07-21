@@ -168,7 +168,7 @@ export default function Home() {
         <SeamlessScrollComponent />
         <div className="w-full max-w-5xl mx-auto pt-20 xl:pt-40 px-4 text-center">
           <p className="section-title">
-            It's time to join the thousands of creators, artists, and developers using Solana.
+            It&apos;s time to join the thousands of creators, artists, and developers using Solana.
           </p>
           <Link
             className="mt-10 inline-block rounded-full py-2 sm:py-4 px-6 sm:px-8 bg-gradient-to-r from-[#8C01FA] to-[#000000] text-xl"

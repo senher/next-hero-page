@@ -47,8 +47,8 @@ export default function GrowTab() {
             height={53}
           />
           <p className="mt-6 text-md lg:text-xl">
-            It’s time to bridge the digital and physical. Anybodies helps established brands like
-            Toys’R’Us connect real-life places and products with NFTs.
+            It&apos;s time to bridge the digital and physical. Anybodies helps established brands
+            like Toys&apos;R&apos;Us connect real-life places and products with NFTs.
           </p>
           <Link className="text-purple-500 mt-4 xl:mt-8 block text-md lg:text-xl" href="/">
             Learn more about {growth.name} on Solana
@@ -79,10 +79,34 @@ export default function GrowTab() {
       </div>
       <TabContent growth={activeGrowth} />
       <div className="mt-8 growth-image-list flex flex-wrap items-center justify-around">
-        <Image className="h-8 sm:h-10 w-auto" src={`/growth-bottom-01.png`} alt="" width={100} height={30} />
-        <Image className="h-8 sm:h-10 w-auto" src={`/growth-bottom-02.png`} alt="" width={39} height={46} />
-        <Image className="h-8 sm:h-10 w-auto" src={`/growth-bottom-03.png`} alt="" width={46} height={46} />
-        <Image className="h-8 sm:h-10 w-auto" src={`/growth-bottom-04.png`} alt="" width={100} height={30} />
+        <Image
+          className="h-8 sm:h-10 w-auto"
+          src={`/growth-bottom-01.png`}
+          alt=""
+          width={100}
+          height={30}
+        />
+        <Image
+          className="h-8 sm:h-10 w-auto"
+          src={`/growth-bottom-02.png`}
+          alt=""
+          width={39}
+          height={46}
+        />
+        <Image
+          className="h-8 sm:h-10 w-auto"
+          src={`/growth-bottom-03.png`}
+          alt=""
+          width={46}
+          height={46}
+        />
+        <Image
+          className="h-8 sm:h-10 w-auto"
+          src={`/growth-bottom-04.png`}
+          alt=""
+          width={100}
+          height={30}
+        />
       </div>
     </section>
   );
