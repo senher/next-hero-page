@@ -56,7 +56,7 @@ export default function Nav() {
               return (
                 <Link
                   className="text-gray-400 items-center flex gap-x-2"
-                  href={menu.name}
+                  href={"#" + menu.name}
                   key={menu.name}
                 >
                   {menu.name}

@@ -34,7 +34,7 @@ const MenuModal = ({ menuList }: { menuList: Menu[] }) => {
         <div className="menu-list flex flex-col gap-4">
           {menuList.map((menu) => {
             return (
-              <Link className="text-xl" href={menu.name} key={menu.name}>
+              <Link className="text-xl" href={"#" + menu.name} key={menu.name}>
                 {menu.name}
               </Link>
             );
