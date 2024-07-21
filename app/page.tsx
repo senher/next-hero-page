@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import GrowTab from "./components/GrowTab";
-import SeamlessScrollComponent from "./components/SeamlessScrollComponent";
+import SeamlessScroll from "./components/SeamlessScroll";
 export default function Home() {
   const companyList = [
     "brave",
@@ -165,7 +165,7 @@ export default function Home() {
         <h2 className="section-title w-full max-w-7xl mx-auto mb-10 xl:mb-20 px-4">
           Join a thriving community.
         </h2>
-        <SeamlessScrollComponent />
+        <SeamlessScroll />
         <div className="w-full max-w-5xl mx-auto pt-20 xl:pt-40 px-4 text-center">
           <p className="section-title">
             It&apos;s time to join the thousands of creators, artists, and developers using Solana.

@@ -2,7 +2,7 @@
 import useSeamlessScroll from "../hooks/useSeamlessScroll";
 import Image from "next/image";
 
-const SeamlessScrollComponent: React.FC = () => {
+const SeamlessScroll: React.FC = () => {
   const { containerRef, contentRef } = useSeamlessScroll(100);
   const NumberContent = ({
     reverse = false,
@@ -126,4 +126,4 @@ const SeamlessScrollComponent: React.FC = () => {
   );
 };
 
-export default SeamlessScrollComponent;
+export default SeamlessScroll;
